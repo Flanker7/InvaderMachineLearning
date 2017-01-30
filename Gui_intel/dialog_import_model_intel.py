@@ -58,7 +58,9 @@ class Ui_Import_Model_Interaction(QObject):
 
         format_filename = unicodedata.normalize('NFKD', filename).encode('ascii','ignore')
         self.get_model_yaml_properties(format_filename)
-        self.variables.export_data_path = format_filename
+        #CHANGEB BY BRUNO TO TRY TO CHANGE OUTPUT TO PREVIOUS SELECTED- TEST
+        #self.variables.export_data_path = format_filename
+        # CHANGEB BY BRUNO TO TRY TO CHANGE OUTPUT TO PREVIOUS SELECTED- TEST
         self.ui.text_model_data_folder.setText(format_filename)
 
 
